@@ -27,3 +27,4 @@ C:\Users\fpigh\source\repos\TP5\obj\Release\net8.0-windows\refint\TP5.dll
 C:\Users\fpigh\source\repos\TP5\obj\Release\net8.0-windows\TP5.pdb
 C:\Users\fpigh\source\repos\TP5\obj\Release\net8.0-windows\TP5.genruntimeconfig.cache
 C:\Users\fpigh\source\repos\TP5\obj\Release\net8.0-windows\ref\TP5.dll
+C:\Users\fpigh\source\repos\TP5\obj\Release\net8.0-windows\TP5.sourcelink.json
