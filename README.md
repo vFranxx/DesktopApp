@@ -1,2 +1,2 @@
 # Desktop app
- Practice with C# and SQL Server
+ Practice with C# and SQL Server for my career
