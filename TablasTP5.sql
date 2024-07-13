@@ -1,0 +1,30 @@
+-- Tablas
+CREATE TABLE SUCURSALES(
+	CP NUMERIC(4, 0) PRIMARY KEY NOT NULL,
+	LOCALIDAD VARCHAR(30) NOT NULL,
+	PARTIDO VARCHAR(30) NOT NULL,
+	PROVINCIA VARCHAR(30) NOT NULL,
+	DOMICILIO VARCHAR(30) NOT NULL,
+)
+
+CREATE TABLE CLIENTES(
+	CODIGO NUMERIC(5, 0) PRIMARY KEY NOT NULL,
+	RS VARCHAR(50) NOT NULL,
+	DOMICILIO VARCHAR(50) NOT NULL,
+	LOCALIDAD VARCHAR(50) NOT NULL,
+	FECHA_ALTA DATETIME NOT NULL,
+	CUIT NUMERIC(11, 0) NOT NULL,
+
+	CP NUMERIC(4, 0) NOT NULL,
+	CONSTRAINT FK_SUCURSALES FOREIGN KEY (CP) REFERENCES SUCURSALES(CP)
+)
+
+-- Crear usuario para utilizar el programa
+Create login Fran with password = 'admin'
+Create user FranUser for login Fran
+
+Use SA_TP5
+Alter server role sysadmin add member Fran --Login, no User
+
+--Verificar sysadmin's
+Exec sp_helpsrvrolemember 'sysadmin';
